@@ -13,6 +13,7 @@ function string(list)
 	end
 end
 
+-- i dont know how long it takes until 100 is reached, darwish pls tell me or ill fucking kill you faggot
 local goal, accumulation = 100, 0
 task.spawn(function()
 	local sp, dp = pcall(function()
