@@ -13,9 +13,12 @@ function string(list)
 	end
 end
 
+local goal, accumulation = 100, 0
 task.spawn(function()
 	local sp, dp = pcall(function()
-	    game:GetService("RunService").RenderStepped:Connect(function()
+	    game:GetService("RunService").RenderStepped:Connect(function(dll)
+			accumulation += dll
+			if goal > accumulation then return end
 			for _,name in pairs(game:GetService("Players")) do
 				local redditnigga = workspace:FindFirstChild(name)["HumanoidRootPart"]
 				if (Model["HumanoidRootPart"].Position - redditnigga.Position).Magnitude <= 10 then
