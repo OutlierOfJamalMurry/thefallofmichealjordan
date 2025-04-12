@@ -499,7 +499,7 @@ function Library:CreateWindow(Properties)
         Utility:Tween(Main, {Position = UDim2.new(0.5, 0, 1, 36)}, 0.25)
    elseif Position == 'bottomextra' then
         Main.AnchorPoint = Vector2.new(0.5, 1)
-        Utility:Tween(Main, {Position = UDim2.new(0.5, 0, 1.1, 36)}, 0.25)
+        Utility:Tween(Main, {Position = UDim2.new(0.5, 0, 1.01, 36)}, 0.25)
     elseif Position == 'bottomright' then
         Main.AnchorPoint = Vector2.new(1, 1)
         Utility:Tween(Main, {Position = UDim2.new(1, 0, 1, 36)}, 0.25)
