@@ -499,7 +499,7 @@ function Library:CreateWindow(Properties)
         Utility:Tween(Main, {Position = UDim2.new(0.5, 0, 1, 36)}, 0.25)
    elseif Position == 'bottomextra' then
         Main.AnchorPoint = Vector2.new(0.5, 1)
-        Utility:Tween(Main, {Position = UDim2.new(0.5, 0, 1.01, 36)}, 0.25)
+        Utility:Tween(Main, {Position = UDim2.new(0.5, 0, 1.03, 36)}, 0.25)
     elseif Position == 'bottomright' then
         Main.AnchorPoint = Vector2.new(1, 1)
         Utility:Tween(Main, {Position = UDim2.new(1, 0, 1, 36)}, 0.25)
@@ -1008,7 +1008,7 @@ function Library:CreateWindow(Properties)
     UserInputService.InputBegan:Connect(function(Input, GameProcessedEvent)
         if not GameProcessedEvent then
             if Input.KeyCode.Name == Library.Prefix.Name then
-                if Main.Position.Y == UDim.new(1, 37) or Main.Position.Y == UDim.new(1, 36) or Main.Position.Y == UDim.new(0, -72) then
+                if Main.Position.Y == UDim.new(1, 37) or Main.Position.Y == UDim.new(1, 36) or Main.Position.Y == UDim.new(1.03, 36) or Main.Position.Y == UDim.new(0, -72) then
                     UpdateFrameSizes()
                     CommandInput:CaptureFocus()
                     if string.find(Position, 'bottom') then
