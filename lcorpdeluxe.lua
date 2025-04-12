@@ -1,3 +1,5 @@
+-- update 1.02
+
 -- // Services
 local CoreGui = game:GetService('CoreGui')
 local TweenService = game:GetService('TweenService')
@@ -1020,6 +1022,7 @@ function Library:CreateWindow(Properties)
                     UpdateFrameSizes()
                     CommandInput:CaptureFocus()
                     if string.find(Position, 'bottom') then
+                        Main.Visible = true
                         Utility:Tween(Main, {Position = Main.Position + UDim2.new(0, 0, 0, -36)}, 0.25)
                         
                         task.wait(0.25)
@@ -1042,6 +1045,7 @@ function Library:CreateWindow(Properties)
                             end
                         end
                     else
+                        Main.Visible = true
                         Utility:Tween(Main, {Position = Main.Position + UDim2.new(0, 0, 0, 36)}, 0.25)    
                         
                         task.wait(0.25)
@@ -1131,6 +1135,7 @@ function Library:CreateWindow(Properties)
 
                         task.wait(0.25)
 
+                        Main.Visible = false
                         CommandsHolder.Visible = false
                     else
                         for _, Instance in next, CommandsHolderScrolling:GetDescendants() do
@@ -1155,6 +1160,7 @@ function Library:CreateWindow(Properties)
 
                         task.wait(0.25)
 
+                        Main.Visible = false
                         CommandsHolder.Visible = false
                     end
                 end
@@ -1195,6 +1201,7 @@ function Library:CreateWindow(Properties)
 
                         task.wait(0.25)
 
+                        Main.Visible = false
                         CommandsHolder.Visible = false
                     else
                         for _, Instance in next, CommandsHolderScrolling:GetDescendants() do
@@ -1219,6 +1226,7 @@ function Library:CreateWindow(Properties)
 
                         task.wait(0.25)
 
+                        Main.Visible = false
                         CommandsHolder.Visible = false
                     end
                 end
@@ -1306,6 +1314,7 @@ function Library:CreateWindow(Properties)
 
                         task.wait(0.25)
 
+                        Main.Visible = false
                         CommandsHolder.Visible = false
                     else
                         for _, Instance in next, CommandsHolderScrolling:GetDescendants() do
@@ -1330,6 +1339,7 @@ function Library:CreateWindow(Properties)
 
                         task.wait(0.25)
 
+                        Main.Visible = false
                         CommandsHolder.Visible = false
                     end
                 end
@@ -1695,6 +1705,7 @@ function Library:CreateWindow(Properties)
         
                         task.wait(0.25)
         
+                        Main.Visible = false
                         CommandsHolder.Visible = false
                     else
                         Utility:Tween(Main, {Position = Main.Position + UDim2.new(0, 0, 0, -35)}, 0.25)
@@ -1721,6 +1732,7 @@ function Library:CreateWindow(Properties)
         
                         task.wait(0.25)
         
+                        Main.Visible = false
                         CommandsHolder.Visible = false
                     end
                 end
