@@ -961,7 +961,7 @@ function Library:CreateWindow(Properties)
                     Utility:Tween(CommandsHolder, {Position = UDim2.new(0, 0, 0, -Main.Position.Y.Offset - Size + 22)}, 0.25)
                 end
             else
-                if Main.Position.Y == UDim.new(1, 36) or Main.Position.Y == UDim.new(0, -72) then
+                if Main.Position.Y == UDim.new(1, 36) or Main.Position.Y == UDim.new(1.03, 36) or Main.Position.Y == UDim.new(0, -72) then
                     Utility:Tween(CommandsHolder, {Position = UDim2.new(0, 0, 0, -Main.Position.Y.Offset - 3)}, 0.25)
                 else
                     Utility:Tween(CommandsHolder, {Position = UDim2.new(0, 0, 0, -Main.Position.Y.Offset + 33)}, 0.25)
@@ -979,7 +979,7 @@ function Library:CreateWindow(Properties)
                     Utility:Tween(CommandsHolder, {Position = UDim2.new(0, 0, 0, -Main.Position.Y.Offset - 237)}, 0.25)
                 end
             else
-                if Main.Position.Y == UDim.new(1, 36) or Main.Position.Y == UDim.new(0, -72) then
+                if Main.Position.Y == UDim.new(1, 36) or Main.Position.Y == UDim.new(1.03, 36) or Main.Position.Y == UDim.new(0, -72) then
                     Utility:Tween(CommandsHolder, {Position = UDim2.new(0, 0, 0, -Main.Position.Y.Offset - 3)}, 0.25)
                 else
                     Utility:Tween(CommandsHolder, {Position = UDim2.new(0, 0, 0, -Main.Position.Y.Offset + 33)}, 0.25)
